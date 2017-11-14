@@ -1,0 +1,50 @@
+<!-- Section 4 Lecture 35: Form Exercise -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <h1>Register</h1>
+        <form>
+            <div>
+                <label for="First Name">First Name:</label>
+                <input type="text" id="First Name" name="firstName" placeholder="John" required>
+                <label for="Last Name">Last Name:</label>
+                <input type="text" id="Last Name" name="lastName" placeholder="Smith" required>
+            </div>
+
+            <div>
+                <label for="Male">Male</label>
+                <input type="radio" id="Male">
+                <label for="Female">Female</label>
+                <input type="radio" id="Female">
+                <label for="Other">Other</label>
+                <input type="radio" id="Other">
+            </div>
+
+            <div>
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="emailId" placeholder="your email" required>
+                <label for="Password">Password:</label>
+                <input type="password" pattern=".{5,10}" required title="5 to 10 characters">
+            </div>
+
+            <div>
+                <label for="Birthday">Birthday:</label>
+                <select name="Month" id="Birthday"></select>
+                <select name="Day" id="Birthday"></select>
+                <select name="Year" id="Birthday"></select>
+            </div>
+
+            <div>
+                <label for="Agree">I agree to the terms and conditions.</label>
+                <input type="checkbox" id="Agree" required>
+            </div>
+
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
